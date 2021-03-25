@@ -533,7 +533,12 @@ footer ul.sosmed li {
 
 footer ul.sosmed li a {
 	color: #fff;
-	font-size: .9rem
+	font-size: .9rem;
+	transition: color .3s ease-out;
+}
+
+footer ul.sosmed li a:hover {
+	color: #FFC028;
 }
 
 footer p {
