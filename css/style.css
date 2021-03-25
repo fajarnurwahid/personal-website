@@ -1,0 +1,690 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Nunito Sans';
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	outline: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.go-up {
+	position: fixed;
+	height: 35px;
+	width: 32px;
+	z-index: 998;
+	padding: 8px;
+	bottom: 12px;
+	right: 18px;
+	background-color: #8C10FF;
+	border-radius: 6px;
+	cursor: pointer;
+	display: none;
+	transition: all .3s ease-out;
+}
+
+.go-up.active {
+	display: block;
+}
+
+.go-up .fa-arrow-up {
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+/* Container */
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+	background-color: #8C10FF;
+	width: 100%;
+	padding: 12px 0;
+	position: fixed;
+	z-index: 999;
+}
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav h1.logo a {
+	font-size: 44px;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Poppins';
+}
+
+nav h1.logo a span {
+	color: #FFC028;
+	font-family: 'Poppins';
+}
+
+ul.menu {
+	display: flex;
+	text-transform: uppercase;
+}
+
+ul.menu li {
+	margin-left: 32px;
+	list-style: none;
+}
+
+ul.menu li a {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	transition: color .3s ease;
+}
+
+ul.menu li a:hover {
+	color: #FFC028;
+}
+
+nav .menu-btn {
+	display: none;
+}
+
+.fa-bars {
+	color: #fff;
+	font-size: 28px;
+}
+
+
+/* Header */
+header {
+	height: 100vh;
+	width: 100%;
+	background: url('../img/banner.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100vh;
+	color: #fff;
+}
+
+header .text2 {
+	font-size: 64px;
+	font-weight: 700;
+}
+
+header .text1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: -10px;
+}
+
+header .text3 {
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+header .text3 span {
+	color: #FFC028;
+}
+
+header a.hire-me {
+	outline: none;
+	border: 2px solid #8C10FF;
+	border-radius: 6px;
+	background-color: #8C10FF;
+	padding: 12px 22px;
+	font-size: 1.5rem;
+	color: #fff;
+	margin-top: 22px;
+	text-transform: uppercase;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+
+header a.hire-me:hover {
+	background-color: transparent;
+	color: #8C10FF;
+}
+
+
+
+
+
+/* About */
+section#about {
+	width: 100%;
+	padding: 100px 0;
+}
+
+section#about .title {
+	font-size: 28px;
+	text-align: center;
+	color: #121212;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+
+section#about .title::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 4px;
+	border-radius: 6px;
+	background-color: #FFC028;
+}
+
+section#about .main {
+	display: flex;
+	justify-content: center;
+}
+
+section#about .main .left {
+	border-radius: 6px;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	margin-right: 64px;
+}
+
+section#about .main .right h3 {
+	margin-bottom: 12px;
+}
+
+section#about .main .right h3 span {
+	color: #8C10FF;
+}
+
+
+section#about .main .right p {
+	margin-bottom: 24px;
+}
+
+section#about .main .right a.download-cv {
+	outline: none;
+	border: 2px solid #8C10FF;
+	border-radius: 6px;
+	background-color: #8C10FF;
+	padding: 8px 16px;
+	font-size: 1rem;
+	color: #fff;
+	margin-top: 22px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color .3s ease;
+}
+
+section#about .main .right a.download-cv:hover {
+	background-color: transparent;
+	color: #8C10FF;
+}
+
+
+
+
+
+/* Services */
+section#services {
+	width: 100%;
+	background-color: #121212;
+	color: #fff;
+	padding: 100px 0;
+}
+
+section#services .title {
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+
+section#services .title::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 4px;
+	border-radius: 6px;
+	background-color: #FFC028;
+}
+
+section#services .service {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section#services .service .service-item {
+	width: calc(33% - 20px);
+	padding: 22px;
+	border-radius: 12px;
+	border: 2px solid #8C10FF;
+	transition: all .3s ease-out;
+	height: 250px;
+}
+
+section#services .service .service-item:hover {
+	border: 2px solid #8C10FF;
+	background-color: #8C10FF;
+	transform: scale(1.03);
+}
+
+section#services .service .service-item h4 {
+	text-align: center;
+	margin-bottom: 18px;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+section#services .service .service-item p {
+	font-size: .9rem;
+	font-weight: 500;
+	margin-top: 12px;
+}
+
+
+
+
+
+/* Skills */
+section#skills {
+	width: 100%;
+	padding: 100px 0;
+}
+
+section#skills .title {
+	font-size: 28px;
+	text-align: center;
+	color: #121212;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+
+section#skills .title::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 4px;
+	border-radius: 6px;
+	background-color: #FFC028;
+}
+
+section#skills .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+section#skills .experience {
+	width: calc(50% - 20px);
+}
+
+section#skills .experience h4 {
+	font-size: 1.3rem;
+	margin-bottom: 12px;
+}
+
+section#skills .skills {
+	width: calc(50% - 20px);
+}
+
+section#skills .skills .bars {
+	margin-bottom: 18px;
+}
+
+section#skills .skills .bars .bar {
+	width: 100%;
+	background-color: #EABEFF;
+	height: 4px;
+	margin-top: 4px;
+	position: relative;
+}
+
+section#skills .skills .bars .bar::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #8C10FF;
+	height: 100%;
+}
+
+section#skills .skills .bars .html::after {
+	width: 80%;
+}
+
+section#skills .skills .bars .js::after {
+	width: 60%;
+}
+
+section#skills .skills .bars .css::after {
+	width: 75%;
+}
+
+section#skills .skills .bars .python::after {
+	width: 90%;
+}
+
+section#skills .skills .bars .django::after {
+	width: 85%;
+}
+
+
+section#skills .skills .skill {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+}
+
+
+
+
+
+
+/* Contact */
+section#contact {
+	width: 100%;
+	padding: 100px 0;
+}
+
+section#contact .title {
+	font-size: 28px;
+	text-align: center;
+	color: #121212;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+
+section#contact .title::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 4px;
+	border-radius: 6px;
+	background-color: #FFC028;
+}
+
+section#contact .contacts {
+	display: flex;
+	justify-content: space-between;
+}
+
+section#contact .contacts .info {
+	width: calc(50% - 20px);
+}
+
+section#contact .contacts .info .contact {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 18px;
+}
+
+section#contact .contacts .info .contact .icon {
+	margin-right: 18px;
+	width: 22px;
+	font-size: 1.3rem;
+	color: #8C10FF;
+}
+
+section#contact .contacts .info .contact .detail h4 {
+	font-size: 1.3rem;
+}
+
+section#contact .contacts .info .contact .detail p {
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #919191;
+}
+
+section#contact .contacts .field {
+	width: calc(50% - 20px);
+}
+
+section#contact .contacts .field h4 {
+	font-size: 1.3rem;
+	margin-bottom: 12px;
+}
+
+section#contact .contacts .field .form {
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+section#contact .contacts .field input, section#contact .contacts .field textarea {
+	width: 100%;
+	border: 2px solid #8C10FF;
+	padding: 8px 6px;
+	outline: none;
+	border-radius: 6px;
+}
+
+section#contact .contacts .field textarea {
+	resize: none;
+}
+
+section#contact .contacts .field .submit {
+	outline: none;
+	border: 2px solid #8C10FF;
+	border-radius: 6px;
+	background-color: #8C10FF;
+	padding: 8px 16px;
+	font-size: 1rem;
+	color: #fff;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color .3s ease;
+	float: right;
+}
+
+section#contact .contacts .field .submit:hover {
+	background-color: transparent;
+	color: #8C10FF;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+	width: 100%;
+	background-color: #121212;
+	padding: 12px 0;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer h2.logo {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+footer h2.logo span {
+	color: #FFC028;
+}
+
+footer ul.sosmed li {
+	list-style: none;
+	margin-bottom: 6px;
+}
+
+footer ul.sosmed li a {
+	color: #fff;
+	font-size: .9rem
+}
+
+footer p {
+	font-size: 1rem;
+	text-align: center;
+	color: #fff;
+	margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 879px) {
+	/* Nav */
+	nav h1.logo a {
+		font-size: 28px;
+	}
+	nav .menu-btn {
+		display: block;
+		z-index: 999;
+	}
+	ul.menu {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #8C10FF;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		transform: translateX(100%);
+		transition: transform .3s ease-out;
+	}
+	ul.menu.active {
+		transform: translateX(0);
+		transition: transform .3s ease-out;
+	}
+	ul.menu li:nth-child(1) {
+		margin-top: 64px;
+	}
+	ul.menu li {
+		margin: 18px 0;
+	}
+	ul.menu li a {
+		font-size: 1.5rem;
+	}
+
+
+
+	/* Header */
+	header .text1 {
+		font-size: 1.2rem;
+	}
+	header .text2 {
+		font-size: 48px;
+	}
+	header .text3 {
+		font-size: 1.5rem;
+	}
+	header a.hire-me {
+		font-size: 1rem;
+	}
+
+
+
+	/* About */
+	section#about .main {
+		flex-direction: column;
+		align-items: center;
+	}
+	section#about .main .left {
+		margin-right: 0;
+		margin-bottom: 32px;
+		width: 100%;
+	}
+	section#about .main .right {
+		width: 100%;
+	}
+	section#about .main .right a.download-cv {
+		font-size: .9rem;
+	}
+	section#about .title {
+		font-size: 24px;
+	}
+
+
+
+	/* Services */
+	section#services .title {
+		font-size: 24px;
+	}
+	section#services .service {
+		flex-direction: column;
+	}
+	section#services .service .service-item {
+		margin-bottom: 18px;
+		width: 100%;
+	}
+	section#services .service .service-item:nth-child(3) {
+		margin-bottom: 0;
+	}
+
+
+
+
+	/* Skills */
+	section#skills .content {
+		flex-direction: column;
+	}
+	section#skills .experience {
+		width: 100%;
+		margin-bottom: 32px;
+	}
+	section#skills .skills {
+		width: 100%;
+	}
+
+
+
+	/* Contact */
+	section#contact .contacts {
+		flex-direction: column;
+	}
+	section#contact .contacts .info {
+		width: 100%;
+		margin-bottom: 32px;
+	}
+	section#contact .contacts .field {
+		width: 100%;
+	}
+
+
+
+	/* Footer */
+	footer ul.sosmed li {
+		margin-bottom: 4px;
+	}
+	footer ul.sosmed li a {
+		font-size: .7rem
+	}
+	footer h2.logo {
+		font-size: 1.1rem;
+	}
+	footer p {
+		font-size: .7rem;
+	}
+}
