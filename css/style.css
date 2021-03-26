@@ -46,11 +46,15 @@ html {
 
 /* Navbar */
 nav {
-	background-color: #31326f;
 	width: 100%;
 	padding: 12px 0;
 	position: fixed;
-	z-index: 999;
+	z-index: 998;
+	transition: background-color .2s ease-out;
+}
+
+nav.sticky {
+	background-color: #31326f;
 }
 
 nav .container {
@@ -107,6 +111,8 @@ header {
 	height: 100vh;
 	width: 100%;
 	background: url('../img/banner.png');
+	background-position: center;
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -241,7 +247,7 @@ section#about .main .right a.download-cv:hover {
 /* Services */
 section#services {
 	width: 100%;
-	background-color: #121212;
+	background-color: #31326f;
 	color: #fff;
 	padding: 100px 0;
 }
@@ -358,7 +364,7 @@ section#skills .skills .bars .bar {
 	position: relative;
 }
 
-section#skills .skills .bars .bar::after {
+section#skills .skills .bars .bar:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -367,23 +373,23 @@ section#skills .skills .bars .bar::after {
 	height: 100%;
 }
 
-section#skills .skills .bars .html::after {
+section#skills .skills .bars .html:after {
 	width: 80%;
 }
 
-section#skills .skills .bars .js::after {
+section#skills .skills .bars .js:after {
 	width: 60%;
 }
 
-section#skills .skills .bars .css::after {
+section#skills .skills .bars .css:after {
 	width: 75%;
 }
 
-section#skills .skills .bars .python::after {
+section#skills .skills .bars .python:after {
 	width: 90%;
 }
 
-section#skills .skills .bars .django::after {
+section#skills .skills .bars .django:after {
 	width: 85%;
 }
 
@@ -414,7 +420,7 @@ section#contact .title {
 	margin-bottom: 48px;
 }
 
-section#contact .title::after {
+section#contact .title:after {
 	content: '';
 	display: block;
 	margin: 0 auto;
@@ -568,9 +574,9 @@ footer p {
 		z-index: 999;
 	}
 	ul.menu {
-		position: fixed;
+		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		background-color: #31326f;
 		top: 0;
 		left: 0;
@@ -586,7 +592,7 @@ footer p {
 		transition: transform .3s ease-out;
 	}
 	ul.menu li:nth-child(1) {
-		margin-top: 64px;
+		margin-top: 100px;
 	}
 	ul.menu li {
 		margin: 18px 0;
