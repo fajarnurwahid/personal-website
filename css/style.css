@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,7 +22,7 @@ html {
 	padding: 8px;
 	bottom: 12px;
 	right: 18px;
-	background-color: #8C10FF;
+	background-color: #31326f;
 	border-radius: 6px;
 	cursor: pointer;
 	display: none;
@@ -44,7 +46,7 @@ html {
 
 /* Navbar */
 nav {
-	background-color: #8C10FF;
+	background-color: #31326f;
 	width: 100%;
 	padding: 12px 0;
 	position: fixed;
@@ -65,7 +67,7 @@ nav h1.logo a {
 }
 
 nav h1.logo a span {
-	color: #FFC028;
+	color: #ffc93c;
 	font-family: 'Poppins';
 }
 
@@ -87,7 +89,7 @@ ul.menu li a {
 }
 
 ul.menu li a:hover {
-	color: #FFC028;
+	color: #ffc93c;
 }
 
 nav .menu-btn {
@@ -135,14 +137,14 @@ header .text3 {
 }
 
 header .text3 span {
-	color: #FFC028;
+	color: #ffc93c;
 }
 
 header a.hire-me {
 	outline: none;
-	border: 2px solid #8C10FF;
+	border: 2px solid #31326f;
 	border-radius: 6px;
-	background-color: #8C10FF;
+	background-color: #31326f;
 	padding: 12px 22px;
 	font-size: 1.5rem;
 	color: #fff;
@@ -155,7 +157,7 @@ header a.hire-me {
 
 header a.hire-me:hover {
 	background-color: transparent;
-	color: #8C10FF;
+	color: #31326f;
 }
 
 
@@ -184,7 +186,7 @@ section#about .title::after {
 	width: 64px;
 	height: 4px;
 	border-radius: 6px;
-	background-color: #FFC028;
+	background-color: #ffc93c;
 }
 
 section#about .main {
@@ -205,7 +207,7 @@ section#about .main .right h3 {
 }
 
 section#about .main .right h3 span {
-	color: #8C10FF;
+	color: #31326f;
 }
 
 
@@ -215,9 +217,9 @@ section#about .main .right p {
 
 section#about .main .right a.download-cv {
 	outline: none;
-	border: 2px solid #8C10FF;
+	border: 2px solid #31326f;
 	border-radius: 6px;
-	background-color: #8C10FF;
+	background-color: #31326f;
 	padding: 8px 16px;
 	font-size: 1rem;
 	color: #fff;
@@ -229,7 +231,7 @@ section#about .main .right a.download-cv {
 
 section#about .main .right a.download-cv:hover {
 	background-color: transparent;
-	color: #8C10FF;
+	color: #31326f;
 }
 
 
@@ -260,7 +262,7 @@ section#services .title::after {
 	width: 64px;
 	height: 4px;
 	border-radius: 6px;
-	background-color: #FFC028;
+	background-color: #ffc93c;
 }
 
 section#services .service {
@@ -273,14 +275,14 @@ section#services .service .service-item {
 	width: calc(33% - 20px);
 	padding: 22px;
 	border-radius: 12px;
-	border: 2px solid #8C10FF;
+	border: 2px solid #31326f;
 	transition: all .3s ease-out;
 	height: 250px;
 }
 
 section#services .service .service-item:hover {
-	border: 2px solid #8C10FF;
-	background-color: #8C10FF;
+	border: 2px solid #31326f;
+	background-color: #31326f;
 	transform: scale(1.03);
 }
 
@@ -323,7 +325,7 @@ section#skills .title::after {
 	width: 64px;
 	height: 4px;
 	border-radius: 6px;
-	background-color: #FFC028;
+	background-color: #ffc93c;
 }
 
 section#skills .content {
@@ -350,7 +352,7 @@ section#skills .skills .bars {
 
 section#skills .skills .bars .bar {
 	width: 100%;
-	background-color: #EABEFF;
+	background-color: #9ddfd3;
 	height: 4px;
 	margin-top: 4px;
 	position: relative;
@@ -361,7 +363,7 @@ section#skills .skills .bars .bar::after {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #8C10FF;
+	background-color: #31326f;
 	height: 100%;
 }
 
@@ -419,7 +421,7 @@ section#contact .title::after {
 	width: 64px;
 	height: 4px;
 	border-radius: 6px;
-	background-color: #FFC028;
+	background-color: #ffc93c;
 }
 
 section#contact .contacts {
@@ -442,7 +444,7 @@ section#contact .contacts .info .contact .icon {
 	margin-right: 18px;
 	width: 22px;
 	font-size: 1.3rem;
-	color: #8C10FF;
+	color: #31326f;
 }
 
 section#contact .contacts .info .contact .detail h4 {
@@ -471,7 +473,7 @@ section#contact .contacts .field .form {
 
 section#contact .contacts .field input, section#contact .contacts .field textarea {
 	width: 100%;
-	border: 2px solid #8C10FF;
+	border: 2px solid #31326f;
 	padding: 8px 6px;
 	outline: none;
 	border-radius: 6px;
@@ -483,9 +485,9 @@ section#contact .contacts .field textarea {
 
 section#contact .contacts .field .submit {
 	outline: none;
-	border: 2px solid #8C10FF;
+	border: 2px solid #31326f;
 	border-radius: 6px;
-	background-color: #8C10FF;
+	background-color: #31326f;
 	padding: 8px 16px;
 	font-size: 1rem;
 	color: #fff;
@@ -497,7 +499,7 @@ section#contact .contacts .field .submit {
 
 section#contact .contacts .field .submit:hover {
 	background-color: transparent;
-	color: #8C10FF;
+	color: #31326f;
 }
 
 
@@ -523,7 +525,7 @@ footer h2.logo {
 }
 
 footer h2.logo span {
-	color: #FFC028;
+	color: #ffc93c;
 }
 
 footer ul.sosmed li {
@@ -538,7 +540,7 @@ footer ul.sosmed li a {
 }
 
 footer ul.sosmed li a:hover {
-	color: #FFC028;
+	color: #ffc93c;
 }
 
 footer p {
@@ -569,7 +571,7 @@ footer p {
 		position: fixed;
 		width: 100%;
 		height: 100%;
-		background-color: #8C10FF;
+		background-color: #31326f;
 		top: 0;
 		left: 0;
 		display: flex;
