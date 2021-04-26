@@ -103,7 +103,7 @@ section#header nav .menu-bar {
 /* Jumbotron */
 section#header section#jumbotron {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: var(--third-clr);
 	display: flex;
 	align-items: center;
@@ -154,14 +154,14 @@ section#header section#jumbotron .content a.hire:hover {
 }
 
 section#header section#jumbotron .decoration {
-	width: 358px;
-	height: 358px;
+	width: 300px;
+	height: 300px;
 	position: relative;
 }
 
 section#header section#jumbotron .decoration span {
-	width: 160px;
-	height: 160px;
+	width: 120px;
+	height: 120px;
 	display: inline-block;
 	position: absolute;
 }
@@ -200,10 +200,10 @@ section#header section#jumbotron .decoration span.square.deco-4 {
 
 @keyframes circleSlide {
 	0% {
-		width: 160px;
+		width: 120px;
 	}
 	25% {
-		width: 160px;
+		width: 120px;
 	}
 	50% {
 		width: 100%;
@@ -236,10 +236,10 @@ section#header section#jumbotron .decoration span.square.deco-4 {
 
 @keyframes squareSlide {
 	0% {
-		width: 160px;
+		width: 120px;
 	}
 	25% {
-		width: 160px;
+		width: 120px;
 	}
 	50% {
 		width: 100%;
@@ -252,11 +252,11 @@ section#header section#jumbotron .decoration span.square.deco-4 {
 @keyframes squareMove {
 	0% {
 		transform: scaleX(1);
-		width: 160px;
+		width: 120px;
 	}
 	20% {
 		transform: scaleX(1);
-		width: 160px;
+		width: 120px;
 	}
 	40% {
 		transform: scaleX(0);
@@ -274,6 +274,7 @@ section#header section#jumbotron .decoration span.square.deco-4 {
 
 section#header section#jumbotron span.indicator {
 	position: absolute;
+	display: block;
 	bottom: 40px;
 	color: #fff;
 	left: 50%;
@@ -321,14 +322,14 @@ section#about .img::before {
 	right: -8px;
 	content: '';
 	background-color: var(--secondary-clr);
-	width: 354px;
-	height: 354px;
+	width: inherit;
+	height: inherit;
 	z-index: -1;
 }
 
 section#about .img img {
-	width: 354px;
-	height: 354px;
+	width: inherit;
+	height: inherit;
 	object-fit: cover;
 }
 
@@ -670,7 +671,8 @@ section#footer p {
 	section#header section#jumbotron {
 		padding: 100px 60px;
 	}
-	section#header nav {
+	section#header nav,
+	section#footer {
 		padding: 0 60px;
 	}
 }
@@ -680,7 +682,8 @@ section#footer p {
 	section#header section#jumbotron {
 		padding: 100px 40px;
 	}
-	section#header nav {
+	section#header nav,
+	section#footer {
 		padding: 0 40px;
 	}
 	section#header nav .menu-bar {
@@ -761,5 +764,52 @@ section#footer p {
 	}
 	section#work .work {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	section#header nav a.logo {
+		font-size: 24px;
+	}
+	section#header section#jumbotron .content h5 {
+		font-size: 12px;
+	}
+
+	section#header section#jumbotron .content h1 {
+		font-size: 36px;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	section#header section#jumbotron .content h3 {
+		font-size: 18px;
+		color: #fff;
+		font-weight: 400;
+	}
+	section#about .img {
+		width: 300px;
+		height: 300px;
+	}
+	section#contact .profile .profile-item span.icon {
+		font-size: 24px;
+	}
+
+	section#contact .profile .profile-item span.detail {
+		font-size: 18px;
+		margin-left: 18px;
+	}
+	section#footer p {
+		font-size: 12px;
+	}
+	section#header section#jumbotron .decoration {
+		margin-top: 48px;
+		height: 280px;
+	}
+	section#header section#jumbotron .decoration span {
+		width: 125px;
+		height: 125px;
+	}
+	section#header section#jumbotron span.indicator {
+		bottom: 0;
 	}
 }
