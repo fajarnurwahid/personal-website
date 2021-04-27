@@ -65,3 +65,12 @@ for (let i=0; i<closeBtn.length; i++) {
 		modal[i].classList.remove('active');
 	});
 }
+
+
+
+// Menu bar Close
+for (let i=0; i<navItem.length; i++) {
+	navItem[i].addEventListener('click', function () {
+		menu.classList.remove('active');
+	});
+}
