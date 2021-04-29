@@ -169,7 +169,7 @@ header#jumbotron .decoration::before {
 	position: absolute;
 	top: 0;
 	border-radius: calc(((360px / 2) - 12px) / 2);
-	animation: beforeAnimation 3s alternate infinite;
+	animation: beforeAnimation 3s ease-in-out infinite alternate;
 }
 
 header#jumbotron .decoration::after {
@@ -180,7 +180,7 @@ header#jumbotron .decoration::after {
 	position: absolute;	
 	bottom: 0;
 	border-radius: calc(((360px / 2) - 12px) / 2);
-	animation: afterAnimation 3s alternate infinite;
+	animation: afterAnimation 3s ease-in-out infinite alternate;
 }
 
 @keyframes beforeAnimation {
@@ -435,7 +435,6 @@ section#skills .skills .skill span.bar-skill.django::before {
 section#profile {
 	width: 100%;
 	padding: 60px 100px;
-	background: var(--primary-clr);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -461,7 +460,7 @@ section#profile .profile-item p.text {
 	margin-left: 18px;
 	display: inline-block;
 	font-size: 18px;
-	color: #fff;
+	color: var(--primary-clr);
 	font-weight: 500;
 }
 
@@ -472,15 +471,15 @@ section#profile .hire {
 
 section#profile .hire p {
 	font-size: 36px;
-	color: #fff;
+	color: var(--primary-clr);
 	font-weight: 600;
 }
 
 section#profile .hire a.hire-me {
 	display: inline-block;
 	padding: 12px 24px;
-	background-color: #fff;
-	color: var(--primary-clr);
+	background-color: var(--primary-clr);
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-top: 18px;
@@ -556,6 +555,112 @@ footer#footer p {
 	margin-top: 12px;
 	text-align: center;
 	border-top: 1px solid #fff;
+}
+
+
+
+
+
+/* Sertificated */
+section#sertificated {
+	width: 100%;
+	padding: 60px 100px;
+	background-color: var(--primary-clr);
+}
+
+section#sertificated .slider {
+	width: 50vw;
+	height: 75vh;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+section#sertificated .slider .wrapper {
+	width: 700%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	animation: slidy 30s ease infinite;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+section#sertificated .slider .wrapper .slide {
+	width: 100%;
+	height: 100%;
+}
+
+section#sertificated .slider .wrapper .slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@keyframes slidy {
+	0% {
+		left: 0;
+	}
+	5% {
+		left: 0;
+	}
+	10% {
+		left: -50%;
+	}
+	15% {
+		left: -100%;
+	}
+	20% {
+		left: -100%;
+	}
+	25% {
+		left: -150%;
+	}
+	30% {
+		left: -200%;
+	}
+	35% {
+		left: -200%;
+	}
+	40% {
+		left: -250%;
+	}
+	45% {
+		left: -300%;
+	}
+	50% {
+		left: -300%;
+	}
+	55% {
+		left: -350%;
+	}
+	60% {
+		left: -400%;
+	}
+	65% {
+		left: -400%;
+	}
+	70% {
+		left: -450%;
+	}
+	75% {
+		left: -500%;
+	}
+	80% {
+		left: -500%;
+	}
+	85% {
+		left: -550%;
+	}
+	90% {
+		left: -600%;
+	}
+	95% {
+		left: -600%;
+	}
+	100% {
+		left: 0;
+	}
 }
 
 
