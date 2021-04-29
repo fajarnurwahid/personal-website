@@ -790,6 +790,15 @@ body > .modal img {
 	footer#footer {
 		padding: 16px 20px;
 	}
+
+	/* Sertificated */
+	section#sertificated {
+		padding: 60px 20px;
+	}
+	section#sertificated .slider {
+		width: 100%;
+		height: auto;
+	}
 }
 
 
