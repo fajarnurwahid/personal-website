@@ -275,6 +275,7 @@ section#about .about a.cv {
 	position: relative;
 	transition: all .3s ease;
 	z-index: 1;
+	color: var(--primary-clr);
 }
 
 section#about .about a.cv::before {
