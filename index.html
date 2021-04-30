@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<title>Fajar Nur Wahid</title>
 </head>
@@ -34,10 +35,10 @@
 	<!-- Jumbotron -->
 	<header id="jumbotron">
 		<div class="content">
-			<h5>Hello</h5>
-			<h1>I'm Fajar Nur Wahid</h1>
-			<h3>I am a <span id="typed"></span></h3>
-			<a href="mailto:fajarnurwahid12@gmail.com?&subject=Let's work together." class="hire-me">Hire Me</a>
+			<h5 data-aos="fade-right">Hello</h5>
+			<h1 data-aos="fade-right" data-aos-delay="100">I'm Fajar Nur Wahid</h1>
+			<h3 data-aos="fade-right" data-aos-delay="200">I am a <span id="typed"></span></h3>
+			<a href="mailto:fajarnurwahid12@gmail.com?&subject=Let's work together." class="hire-me"  data-aos="fade-right">Hire Me</a>
 		</div>
 		<div class="decoration">
 		</div>
@@ -46,10 +47,10 @@
 
 	<!-- About -->
 	<section id="about">
-		<div class="img">
+		<div class="img" data-aos="fade-right">
 			<img src="img/Fajar.webp" alt="Fajar Nur Wahid">
 		</div>
-		<div class="about">
+		<div class="about" data-aos="fade-left">
 			<p>Hi, I am Fajar from Indonesia. I am a fresh graduate in 2020. I live in Lampung, to be precise in the Pesawaran district. I really like programming. I aspire to become a fullstack web developer. I took several courses on Udemy to increase my experience and knowledge about web development. I learn about web development (frontend and backend) and sometimes I learn about data science in Python. And I also frequently participate in online logo design contests.</p>
 			<a href="https://drive.google.com/file/d/1k6TGT-wiYMLxIdESocSeIL1CnBZpktZD/view?usp=sharing" class="cv">Download CV</a>
 		</div>
@@ -58,10 +59,10 @@
 
 	<!-- Work -->
 	<section id="work">
-		<div class="work" data-target="#ngofee">
+		<div class="work" data-target="#ngofee" data-aos="fade-up">
 			<img src="img/landing_page_ngofee.webp" alt="">
 		</div>
-		<div class="work" data-target="#travelo">
+		<div class="work" data-target="#travelo" data-aos="fade-up" data-aos-delay="100">
 			<img src="img/travelo_pre.webp" alt="">
 		</div>
 	</section>
@@ -69,11 +70,11 @@
 
 	<!-- Skills -->
 	<section id="skills">
-		<div class="exp">
+		<div class="exp" data-aos="fade-right">
 			<h4 class="head">Experience</h4>
 			<p>I am a fresh graduate. I graduated in 2020. I love programming. I also took online courses on Udemy which made me more proficient at programming.</p>
 		</div>
-		<div class="skills">
+		<div class="skills" data-aos="fade-left">
 			<div class="skill">
 				<h4 class="head">HTML</h4>
 				<span class="bar-skill html"></span>
@@ -97,7 +98,7 @@
 
 	<!-- Sertificated -->
 	<section id="sertificated">
-		<div class="slider">
+		<div class="slider" data-aos="zoom-in">
 			<div class="wrapper">
 				<div class="slide">
 					<img src="img/sertificated_1.webp" alt="">
@@ -128,7 +129,7 @@
 
 	<!-- Profile -->
 	<section id="profile">
-		<div class="profile">
+		<div class="profile" data-aos="fade-right">
 			<div class="profile-item">
 				<span class="icon">
 					<i class="fas fa-user"></i>
@@ -148,7 +149,7 @@
 				<p class="text">fajarnurwahid12@gmail.com</p>
 			</div>
 		</div>
-		<div class="hire">
+		<div class="hire" data-aos="fade-left">
 			<p>Let's work together.</p>
 			<a href="mailto:fajarnurwahid12@gmail.com?&subject=Let's work together." class="hire-me">Hire Me</a>
 		</div>
@@ -194,6 +195,13 @@
 	
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once:true,
+			duration:700,
+		});
+	</script>
 	<script src="js/script.js"></script>
 </body>
 </html>
