@@ -72,5 +72,6 @@ for (let i=0; i<closeBtn.length; i++) {
 for (let i=0; i<navItem.length; i++) {
 	navItem[i].addEventListener('click', function () {
 		menu.classList.remove('active');
+		document.querySelector('nav .menu-bar .fas').classList.replace('fa-times', 'fa-bars');
 	});
 }
