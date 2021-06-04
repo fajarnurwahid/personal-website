@@ -490,6 +490,64 @@ footer .content .sosmed {
 
 
 
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.loader span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #fff;
+    position: relative;
+    animation: loading 1s ease-in-out infinite;
+}
+.loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    animation: loader 1s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+
 
 
 
