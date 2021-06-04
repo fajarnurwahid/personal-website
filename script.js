@@ -98,3 +98,11 @@ window.addEventListener('scroll', function() {
 		}
 	});
 });
+
+
+
+// Loading
+const loader = $('.loader');
+$(window).on('load', function() {
+	loader.fadeOut();
+});
