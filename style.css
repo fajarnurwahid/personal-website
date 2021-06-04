@@ -260,6 +260,7 @@ nav .bar-menu {
 #works .work {
     overflow: hidden;
     border-radius: 1rem;
+    position: relative;
 }
 
 #works .work::before {
