@@ -203,18 +203,14 @@ nav .bar-menu {
 }
 
 #about .imgBx {
+    flex: 1;
     width: 100%;
-    height: 280px;
     border-radius: 1rem;
     overflow: hidden;
-    position: relative;
     margin-bottom: 2.5rem;
 }
 
 #about .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -222,6 +218,7 @@ nav .bar-menu {
 
 #about .text {
     width: 100%;
+    flex: 1.5;
 }
 
 #about .text .title {
@@ -261,11 +258,8 @@ nav .bar-menu {
 }
 
 #works .work {
-    width: 100%;
-    height: 220px;
     overflow: hidden;
     border-radius: 1rem;
-    position: relative;
 }
 
 #works .work::before {
@@ -286,9 +280,6 @@ nav .bar-menu {
 }
 
 #works .work img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -344,8 +335,8 @@ nav .bar-menu {
 
 /* certificates */
 #certificates .content {
-    max-width: 320px;
-    max-height: 226px;
+    max-width: 1000px;
+    max-height: 706px;
     border-radius: 1rem;
     box-shadow: 4px 4px 1.5rem 0 rgba(0, 0, 0, .1);
     overflow: hidden;
@@ -489,6 +480,10 @@ footer .bottom p span {
     font-weight: 600;
 }
 
+footer .content .sosmed {
+    justify-content: flex-start;
+}
+
 
 
 
@@ -505,124 +500,31 @@ footer .bottom p span {
 
 /* Responsive Breakpoint */
 /* Large Phone and Tablet */
-@media screen and (min-width: 426px) {
-	/* button */
-	.btn {
-	    font-size: 1.5rem;
-	}
-
-
-
-	/* sosmed */
-	.sosmed a {
-	    width: 2.2rem;
-	    height: 2.2rem;
-	    font-size: 1.5rem;
-	}
-
-
-
-	/* header */
-	#header .content h5 {
-	    font-size: 1rem;
-	}
-
-	#header .content h1 {
-	    font-size: 2.5rem;
-	}
-	#header .content h3 {
-	    font-size: 2rem;
-	}
-
-
-	/* about */
-	#about {
-	    flex-direction: row;
-	    align-items: flex-start;
-	}
-	#about .imgBx {
-		flex: 1.5;
-	    height: 280px;
-	    margin-bottom: 0;
-	    margin-right: 1.5rem;
-	}
-	#about .text {
-		flex: 2;
-	}
-
-
-
-	/* works */
-	#works .content {
-	    grid-template-columns: auto auto;
-	    grid-gap: 1.5rem;
-	}
-
-
-	/* skills */
-	#skills .content {
-	    grid-template-columns: auto auto;
-	    grid-gap: 1.5rem;
-	}
-
-
-	/* certificates */
-	#certificates .content {
-	    max-width: 742px;
-	    max-height: 524px;
-	}
-	#certificates .content .arrow span {
-	    font-size: 2rem;
-	    width: 4rem;
-	    height: 4rem;
-	}
-	#certificates .indicator span {
-	    width: .8rem;
-	    height: .8rem;
-	}
-
-
-	/* contact */
-	#contact .wrapper {
-	    padding: 4rem;
-	}
-	#contact .wrapper p {
-	    font-size: 3rem;
-	}
-
-
-
-	/* footer */
-	footer .content {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-	footer .bottom p {
-	    font-size: 1rem;
-	}
-}
-
-
-
-@media screen and (min-width: 576px) {
-	/* navbar */
+@media screen and (min-width: 600px) {
+    /* navbar */
     nav .bar-menu {
         display: none;
     }
-	nav .menu {
-	    display: flex;
-	    align-items: center;
-	    flex-direction: row;
-	    position: static;
-	    justify-content: unset;
-	    transform: unset;
-	    height: auto;
-	    width: auto;
-	}
-	nav .menu li {
-	    margin: 0 1rem;
-	}
+    nav .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        position: static;
+        justify-content: unset;
+        transform: unset;
+        height: auto;
+        width: auto;
+    }
+    nav .menu li {
+        margin: 0 1rem;
+    }
+
+
+
+    /* about */
+    #about .imgBx {
+        width: 50%
+    }
 }
 
 
@@ -640,29 +542,103 @@ footer .bottom p span {
 	}
 
 
-	/* about */
-	#about .imgBx {
-		flex: 1;
-	}
 
 
-	/* works */
-	#works .work {
-	    height: 260px;
-	}
+    /* button */
+    .btn {
+        font-size: 1.2rem;
+    }
 
 
-	/* certificates */
-	#certificates .content {
-	    max-width: 1000px;
-	    max-height: 706px;
-	}
+
+    /* sosmed */
+    .sosmed a {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1.5rem;
+    }
 
 
-	/* footer */
-	footer {
-		padding: .8rem 5rem;
-	}
+
+    /* header */
+    #header .content h5 {
+        font-size: 1rem;
+    }
+
+    #header .content h1 {
+        font-size: 2.5rem;
+    }
+    #header .content h3 {
+        font-size: 2rem;
+    }
+
+
+    /* about */
+    #about {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    /* about */
+    #about .imgBx {
+        flex: 1;
+        height: 280px;
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+    }
+    #about .text {
+        flex: 2;
+    }
+
+
+
+    /* works */
+    #works .content {
+        grid-template-columns: auto auto;
+        grid-gap: 1.5rem;
+    }
+
+
+    /* skills */
+    #skills .content {
+        grid-template-columns: auto auto;
+        grid-gap: 1.5rem;
+    }
+
+
+    /* certificates */
+    #certificates .content .arrow span {
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    #certificates .indicator span {
+        width: .8rem;
+        height: .8rem;
+    }
+
+
+    /* contact */
+    #contact .wrapper {
+        padding: 4rem;
+    }
+    #contact .wrapper p {
+        font-size: 3rem;
+    }
+
+
+
+    /* footer */
+    footer .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    footer .bottom p {
+        font-size: 1rem;
+    }
+    footer {
+        padding: .8rem 5rem;
+    }
 }
 
 
