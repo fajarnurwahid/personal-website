@@ -26,3 +26,11 @@ window.addEventListener('scroll', function() {
 		}
 	});
 });
+
+
+
+// Loading
+const loader = $('.loading');
+$(window).on('load', function() {
+	loader.fadeOut();
+});
