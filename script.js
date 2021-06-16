@@ -34,3 +34,18 @@ const loader = $('.loading');
 $(window).on('load', function() {
 	loader.fadeOut();
 });
+
+
+
+
+// Typed js
+let options = {
+  strings: ['Web Designer', 'Web Developer'],
+  typeSpeed: 70,
+  backSpeed: 50,
+  smartBackspace: false,
+  backDelay: 2000,
+  loop: true,
+};
+
+let typed = new Typed('.typed', options);
