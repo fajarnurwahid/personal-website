@@ -14,6 +14,7 @@ li {
 
 nav.navbar {
 	background: #0A1931 !important;
+	z-index: 100;
 }
 .navbar-brand {
 	font-weight: 700;
@@ -108,4 +109,94 @@ nav.navbar {
 footer {
 	width: 100%;
 	background: #0A1931;
+}
+
+
+
+/* Loading */
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loading .loader {
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+.loading .loader::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background: #0A1931;
+	left: 0;
+	animation: loadingBefore 2s ease-in-out infinite;
+}
+.loading .loader::after {
+	position: absolute;
+	content: '';
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background: #0A1931;
+	right: 0;
+	animation: loadingAfter 2s ease-in-out infinite;
+}
+
+@keyframes loadingBefore {
+	0% {
+		transform: translateY(-50%) scale(1);
+		left: 0;
+	}
+	25% {
+		transform: translate(-50%, -50%) scale(1);
+		left: 50%;
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1.8);
+		left: 50%;
+	}
+	75% {
+		transform: translate(-50%, -50%) scale(1);
+		left: 50%;
+	}
+	100% {
+		transform: translateY(-50%) scale(1);
+		left: 0;
+	}
+}
+@keyframes loadingAfter {
+	0% {
+		transform: translateY(-50%) scale(1);
+		right: 0;
+	}
+	25% {
+		transform: translate(50%, -50%) scale(1);
+		right: 50%;
+	}
+	50% {
+		transform: translate(50%, -50%) scale(1.8);
+		right: 50%;
+	}
+	75% {
+		transform: translate(50%, -50%) scale(1);
+		right: 50%;
+	}
+	100% {
+		transform: translateY(-50%) scale(1);
+		right: 0;
+	}
 }
